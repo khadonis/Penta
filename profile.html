@@ -1,0 +1,332 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Static website boilerplate using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Penta Profile Page</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Static Website Boilerplate">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#260e21">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#260e21">
+	<link rel="stylesheet" href="css\slick.css">
+	<link rel="stylesheet" href="css\slick-theme.css">
+	<link rel="stylesheet" href="css\lightslider.min.css">
+	<link rel="stylesheet" href="css\font-awesome.css">
+	<link rel="stylesheet" href="css\bootstrap.css">
+	<link rel="stylesheet" href="css\bootstrap-select.min.css">
+	<link rel="stylesheet" href="css\app.css">
+</head>
+
+<body>
+
+	<!-- ~ Menu -->
+	<div class="menu-wrapper menu-info">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="logo-wrapper">
+					<div class="logo">
+						<a href="/">
+							<img src="img/logo-detail.png" alt="Logo">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="action-wrapper menu-box">
+					<div class="white-box">
+						<div class="menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!-- use "open" class for caret open -->
+				<!-- <div class="action-wrapper login-box open"> -->
+				<div class="action-wrapper login-box login-box-detail">
+					<div class="white-box">
+						<div class="icon login"></div>
+					</div>
+				</div>
+				<!-- Search -->
+				<div class="action-wrapper search-box search-box-detail">
+					<div class="white-box">
+						<div class="icon search"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Menu -->
+
+	<!-- ~ Banner -->
+	<div class="default-banner">
+		<div class="default-gradient"></div>
+		<div class="default"></div>
+	</div>
+	<!-- / Banner -->
+
+	<div class="container">
+		<div class="profile-wrapper">
+			<!-- ~ Profile -->
+			<div class="profile-container">
+				<!-- ~ Edit  -->
+				<div class="edit-wrapper">
+					<span>Profili Düzenle</span>
+					<button type="button">
+						<img src="img/profile/edit.png" />
+					</button>
+				</div>
+				<!-- / Edit -->
+
+				<!-- ~ Profile Information -->
+				<div class="information-container">
+					<div class="information-picture">
+						<div class="image-container">
+							<img class="img-responsive" src="img/profile/profile.jpg" alt="Göksel Öztürk">
+						</div>
+					</div>
+					<div class="information-detail">
+						<div class="profile-name">
+							GÖKSEL ÖZTÜRK
+						</div>
+						<div class="profile-description">
+							<div class="profile-title">Hakkında</div>
+							<label>2011 yılından bu yana Arma Mimarlık Şirketinde kapı, pencere sektörüne yönelik müşterilerimizin ihtiyaçlarımıza en
+								uygun hizmeti veriyoruz.</label>
+						</div>
+						<div class="profile-information-wrapper">
+							<!-- ~ Phone  -->
+							<div class="profile-information">
+								<div class="profile-title">
+									Telefon
+								</div>
+								<label>
+									0 542 775 09 68
+								</label>
+							</div>
+							<!-- /Phone -->
+							<!-- ~ Email -->
+							<div class="profile-information">
+								<div class="profile-title">
+									Email
+								</div>
+								<label>
+									goksel.ozturk@arma.net.tr
+								</label>
+							</div>
+							<!-- /Email -->
+							<!-- ~ Work -->
+							<div class="profile-information">
+								<div class="profile-title">
+									Çalıştığı Yer
+								</div>
+								<label>
+									Arma Mimarlık
+								</label>
+							</div>
+							<!-- /Work -->
+						</div>
+					</div>
+				</div>
+				<!-- / Profile Information -->
+			</div>
+			<!-- / Profile -->
+
+			<!-- ~ Profile Carousel -->
+			<div class="carousel-container">
+				<div class="carousel">
+					<div>
+						<a href="#">
+							<img src="img/profile/slider/1.jpg" alt="Carousel">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="img/profile/slider/2.jpg" alt="Carousel">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="img/profile/slider/3.jpg" alt="Carousel">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="img/profile/slider/4.jpg" alt="Carousel">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="img/profile/slider/5.jpg" alt="Carousel">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="img/profile/slider/6.jpg" alt="Carousel">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="img/profile/slider/3.jpg" alt="Carousel">
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<img src="img/profile/slider/4.jpg" alt="Carousel">
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- / Profile Carousel -->
+
+			<!-- ~ Box -->
+			<div class="action-box-wrapper">
+				<div class="action-box">
+					<div class="action-box-inside">
+						<div class="box-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" viewBox="0 0 40 60">
+								<path class="box-svg" d="M374,805H357a1.012,1.012,0,0,0-.707.293l-16,16a1,1,0,0,0-.216.325A1.01,1.01,0,0,0,340,822v37a6.018,6.018,0,0,0,6,6h28a6.018,6.018,0,0,0,6-6V811A6.018,6.018,0,0,0,374,805Zm-18,3.414V817a4,4,0,0,1-4,4h-8.586ZM378,859a4,4,0,0,1-4,4H346a4,4,0,0,1-4-4V823h10a6.018,6.018,0,0,0,6-6V807h16a4,4,0,0,1,4,4v48Zm-12-30h4a4.012,4.012,0,0,0,4-4v-4a4.012,4.012,0,0,0-4-4h-4a4.012,4.012,0,0,0-4,4v4A4.012,4.012,0,0,0,366,829Zm-2-8a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v4a2,2,0,0,1-2,2h-4a2,2,0,0,1-2-2v-4Zm9,12H347a1,1,0,0,0,0,2h26A1,1,0,0,0,373,833Zm0,6H358a1,1,0,0,0,0,2h15A1,1,0,0,0,373,839Zm0,6H347a1,1,0,0,0,0,2h26A1,1,0,0,0,373,845Zm0,6H353a1,1,0,0,0,0,2h20A1,1,0,0,0,373,851Z"
+								 transform="translate(-340 -805)" />
+							</svg>
+						</div>
+						<div class="box-title">
+							Gönderilen
+							<br/> CV’ler
+						</div>
+					</div>
+				</div>
+
+				<div class="action-box">
+					<div class="action-box-inside">
+						<div class="box-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="50" height="60" viewBox="0 0 50 60">
+								<path class="box-svg" d="M631,809h-5v-3a1,1,0,0,0-2,0v3H610v-3a1,1,0,0,0-2,0v3h-5a6,6,0,0,0-6,6v44a6,6,0,0,0,6,6h28a6,6,0,0,0,6-6V815A6,6,0,0,0,631,809Zm4,50a4,4,0,0,1-4,4H603a4,4,0,0,1-4-4V815a4,4,0,0,1,4-4h5v3a1,1,0,0,0,2,0v-3h14v3a1,1,0,0,0,2,0v-3h5a4,4,0,0,1,4,4v44Zm6-10h6V820h-6v29Zm2-27h2v25h-2V822Zm1-10a3,3,0,0,0-3,3v3h6v-3A3,3,0,0,0,644,812Zm1,4h-2v-1a1,1,0,0,1,2,0v1Zm-4,37,1.5,3.165,0.52,1.1a1.02,1.02,0,0,0,1.96,0l0.52-1.1L647,853v-2h-6v2Zm3.787,0L644,854.66,643.213,853h1.574ZM612,819h-8a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1v-8A1,1,0,0,0,612,819Zm-1,8h-6v-6h6v6Zm19-8H616a1,1,0,0,0,0,2h14A1,1,0,0,0,630,819Zm-14,6h10a1,1,0,0,0,0-2H616A1,1,0,0,0,616,825Zm14,2H616a1,1,0,0,0,0,2h14A1,1,0,0,0,630,827Zm-14,6h6a1,1,0,0,0,0-2h-6A1,1,0,0,0,616,833Zm-4,4h-8a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1v-8A1,1,0,0,0,612,837Zm-1,8h-6v-6h6v6Zm19-8H616a1,1,0,0,0,0,2h14A1,1,0,0,0,630,837Zm-14,6h10a1,1,0,0,0,0-2H616A1,1,0,0,0,616,843Zm14,2H616a1,1,0,0,0,0,2h14A1,1,0,0,0,630,845Zm-8,4h-6a1,1,0,0,0,0,2h6A1,1,0,0,0,622,849Z"
+								 transform="translate(-597 -805)" />
+							</svg>
+						</div>
+						<div class="box-title">
+							İstenen
+							<br/> Teklifler
+						</div>
+					</div>
+				</div>
+
+				<div class="action-box message">
+					<div class="action-box-inside">
+						<div class="box-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" viewBox="0 0 60 40">
+								<path class="box-svg" d="M877,815H829a6,6,0,0,0-6,6v28a6,6,0,0,0,6,6h48a6,6,0,0,0,6-6V821A6,6,0,0,0,877,815Zm0,2a3.955,3.955,0,0,1,1.136.184l-0.984.689L877,818h-0.03l-22.249,15.574a3.011,3.011,0,0,1-3.441,0l-23.416-16.391A3.96,3.96,0,0,1,829,817h48Zm4,32a4,4,0,0,1-4,4H829a4,4,0,0,1-4-4V821a3.972,3.972,0,0,1,1.032-2.657l24.1,16.871a5.016,5.016,0,0,0,5.734,0l24.1-16.871A3.974,3.974,0,0,1,881,821v28Zm-38.707-14.707-14,14a1,1,0,1,0,1.414,1.414l14-14A1,1,0,0,0,842.293,834.293Zm21.414,0a1,1,0,0,0-1.414,1.414l14,14a1,1,0,0,0,1.414-1.414Z"
+								 transform="translate(-823 -815)" />
+							</svg>
+						</div>
+						<div class="box-title">
+							Mesajlar
+							<label>24 Gelen</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / Box -->
+		</div>
+	</div>
+
+	<!-- ~ Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer-menus">
+					<ul class="footer-left">
+						<li>
+							<a alt="lorem" href="#">LOREM</a>
+						</li>
+						<li>
+							<a alt="ipsum" href="#">IPSUM</a>
+						</li>
+						<li>
+							<a alt="elit" href="#">ELIT</a>
+						</li>
+						<li>
+							<a alt="compos" href="#">COMPOS</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 text-center footer-logo">
+					<div class="footer-middle">
+						<a href="/">
+							<img alt="footer-logo" src="img/footer-logo.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 footer-follow">
+					<div class="footer-right">
+						<div class="footer-social cell">EXOPOWINDâ€™i Takip Edin</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="facebook" src="img/social/facebook.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="instagram" src="img/social/instagram.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="twitter" src="img/social/twitter.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="linkedin" src="img/social/linkedin.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="pinterest" src="img/social/pinterest.png" />
+							</a>
+						</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<!-- /Footer -->
+	<!-- Scripts -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/lightslider.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

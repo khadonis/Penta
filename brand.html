@@ -1,0 +1,543 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Static website boilerplate using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Penta Brand Page</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Static Website Boilerplate">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#260e21">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#260e21">
+	<link rel="stylesheet" href="css\slick.css">
+	<link rel="stylesheet" href="css\slick-theme.css">
+	<link rel="stylesheet" href="css\lightslider.min.css">
+	<link rel="stylesheet" href="css\font-awesome.css">
+	<link rel="stylesheet" href="css\bootstrap.css">
+	<link rel="stylesheet" href="css\bootstrap-select.min.css">
+	<link rel="stylesheet" href="css\app.css">
+</head>
+
+<body>
+
+	<!-- ~ Menu -->
+	<div class="menu-wrapper menu-info">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="logo-wrapper">
+					<div class="logo">
+						<a href="/">
+							<img src="img/logo-detail.png" alt="Logo">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="action-wrapper menu-box">
+					<div class="white-box">
+						<div class="menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!-- use "open" class for caret open -->
+				<!-- <div class="action-wrapper login-box open"> -->
+				<div class="action-wrapper login-box login-box-detail">
+					<div class="white-box">
+						<div class="icon login"></div>
+					</div>
+				</div>
+				<!-- Search -->
+				<div class="action-wrapper search-box search-box-detail">
+					<div class="white-box">
+						<div class="icon search"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Menu -->
+
+	<!-- ~ Banner -->
+	<div class="brand-banner">
+		<div class="brand-banner-image" style="background-image:url('https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/70e616cb-5ba1-4095-a64f-69d3dd8159e1.png')"></div>
+		<div class="follow-wrapper">
+			<div class="follow-action">
+				<div class="follow-button"></div>
+				<span>TAKİP ET</span>
+			</div>
+		</div>
+	</div>
+	<!-- / Banner -->
+
+	<div class="container">
+		<div class="brand-container">
+			<div class="col-md-3">
+				<div class="brand-logo-wrapper">
+					<div class="brand-logo">
+						<img src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/edaeb1d7-60d1-4336-ba92-dc4e17608615.jpg" alt="Adopen">
+					</div>
+				</div>
+				<button type="button" name="button" class="brand-button bg-orange">
+					TEKLİF İSTE
+				</button>
+				<button type="button" name="button" class="brand-button border-default">
+					Ürünlere Git
+				</button>
+				<div class="brand-downloadable">
+					<div class="brand-intertitle">
+						İndirilebilir Dökümanlar
+					</div>
+					<button type="button" name="button" class="brand-button border-default">
+						Ürünlere Kataloğu
+					</button>
+					<button type="button" name="button" class="brand-button border-default">
+						Ürün Fiyat Listesi
+					</button>
+					<button type="button" name="button" class="brand-button border-default purple">
+						Döküman Ekle
+					</button>
+				</div>
+				<div class="brand-downloadable">
+					<div class="brand-intertitle">
+						Şirkete İş Başvurusu Yap
+					</div>
+					<button type="button" name="button" class="brand-button border-default">
+						CV Gönder Başvuru Yap
+					</button>
+				</div>
+				<div class="brand-downloadable">
+					<div class="brand-intertitle">
+						Bizi Takip Edin
+					</div>
+					<div class="brand-social">
+						<div class="brand-social-wrapper">
+							<a target="_blank" href="#" class="social-adjust facebook">facebook</a>
+							<a target="_blank" href="#" class="social-adjust twitter">twitter</a>
+							<a target="_blank" href="#" class="social-adjust linkedin">linkedin</a>
+							<a target="_blank" href="#" class="instagram">instagram</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="brand-description-container">
+					<div class="brand-category-title">
+						Pencere kategorisi
+					</div>
+					<h2 class="brand-title">
+						ADOPEN
+					</h2>
+					<div class="brand-category-title">
+						Marka Hakkında
+					</div>
+					<div class="brand-description">
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+						dolor in dolore reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+						cupidatat non proident, sunt in culpa qui elit officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+						omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+					</div>
+
+					<!-- ~ Announcement -->
+					<div class="brand-category-title">Duyurular</div>
+					<div class="announcement-container">
+						<div class="announcement-item">
+							<div class="announcement-light"></div>
+							<ul id="announcement-slider" class="content-slider">
+								<li>
+									<div class="col-md-4 col-sm-6">
+										<div class="announcement-image">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/283cfce7-a973-494e-9070-467d2613b83d.jpg"
+											 alt="image">
+										</div>
+									</div>
+									<div class="col-md-8 col-sm-6">
+										<div class="announcement-title">
+											Duyuru 01
+										</div>
+										<div class="announcement-detail">
+											İçerik 1
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-4 col-sm-6">
+										<div class="announcement-image">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/283cfce7-a973-494e-9070-467d2613b83d.jpg"
+											 alt="image">
+										</div>
+									</div>
+									<div class="col-md-8 col-sm-6">
+										<div class="announcement-title">
+											Duyuru 02
+										</div>
+										<div class="announcement-detail">
+											İçerik 2
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-4 col-sm-6">
+										<div class="announcement-image">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/283cfce7-a973-494e-9070-467d2613b83d.jpg"
+											 alt="image">
+										</div>
+									</div>
+									<div class="col-md-8 col-sm-6">
+										<div class="announcement-title">
+											Duyuru 03
+										</div>
+										<div class="announcement-detail">
+											İçerik 3
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="col-md-4 col-sm-6">
+										<div class="announcement-image">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/283cfce7-a973-494e-9070-467d2613b83d.jpg"
+											 alt="image">
+										</div>
+									</div>
+									<div class="col-md-8 col-sm-6">
+										<div class="announcement-title">
+											Duyuru 04
+										</div>
+										<div class="announcement-detail">
+											İçerik 4
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /Announcement -->
+
+
+					<!-- ~ Crew -->
+					<div class="brand-category-title">Ekibimiz</div>
+					<div class="crew-container">
+						<div class="crew-item">
+							<ul id="crew-slider" class="content-slider">
+								<li>
+									<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/e26347b6-5549-403c-babf-79a9f4963c2a.jpg"
+									 alt="Genel Müdür">
+									<h3 class="crew-title text-center">Genel Müdür</h3>
+									<h5 class="crew-name text-center">
+										Ali Şahan Yalçın
+									</h5>
+								</li>
+								<li>
+									<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/e26347b6-5549-403c-babf-79a9f4963c2a.jpg"
+									 alt="Genel Müdür">
+									<h3 class="crew-title text-center">Genel Müdür</h3>
+									<h5 class="crew-name text-center">
+										Ali Şahan Yalçın
+									</h5>
+								</li>
+								<li>
+									<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/e26347b6-5549-403c-babf-79a9f4963c2a.jpg"
+									 alt="Genel Müdür">
+									<h3 class="crew-title text-center">Genel Müdür</h3>
+									<h5 class="crew-name text-center">
+										Ali Şahan Yalçın
+									</h5>
+								</li>
+								<li>
+									<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/e26347b6-5549-403c-babf-79a9f4963c2a.jpg"
+									 alt="Genel Müdür">
+									<h3 class="crew-title text-center">Genel Müdür</h3>
+									<h5 class="crew-name text-center">
+										Ali Şahan Yalçın
+									</h5>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /Crew -->
+
+					<!-- ~ Produce -->
+					<div class="brand-category-title">Ekibimiz</div>
+					<div class="produce-container">
+						<div class="produce-item">
+							<ul id="produce-slider" class="content-slider">
+								<li>
+									<div class="product-list">
+										<div class="text-center">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/124fd42f-0cd8-40c2-83ca-7c717dd6d1eb.png"
+											 alt="Ürün">
+										</div>
+										<div class="product-detail">
+											<div class="product-name">
+												Atlantik 750
+											</div>
+											<div class="product-price">
+												<span>Fiyat</span>
+												<label>2.800 TL</label>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-list">
+										<div class="text-center">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/124fd42f-0cd8-40c2-83ca-7c717dd6d1eb.png"
+											 alt="Ürün">
+										</div>
+										<div class="product-detail">
+											<div class="product-name">
+												Atlantik 750
+											</div>
+											<div class="product-price">
+												<span>Fiyat</span>
+												<label>2.800 TL</label>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-list">
+										<div class="text-center">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/124fd42f-0cd8-40c2-83ca-7c717dd6d1eb.png"
+											 alt="Ürün">
+										</div>
+										<div class="product-detail">
+											<div class="product-name">
+												Atlantik 750
+											</div>
+											<div class="product-price">
+												<span>Fiyat</span>
+												<label>2.800 TL</label>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-list">
+										<div class="text-center">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/124fd42f-0cd8-40c2-83ca-7c717dd6d1eb.png"
+											 alt="Ürün">
+										</div>
+										<div class="product-detail">
+											<div class="product-name">
+												Atlantik 750
+											</div>
+											<div class="product-price">
+												<span>Fiyat</span>
+												<label>2.800 TL</label>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-list">
+										<div class="text-center">
+											<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/124fd42f-0cd8-40c2-83ca-7c717dd6d1eb.png"
+											 alt="Ürün">
+										</div>
+										<div class="product-detail">
+											<div class="product-name">
+												Atlantik 750
+											</div>
+											<div class="product-price">
+												<span>Fiyat</span>
+												<label>2.800 TL</label>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /Produce -->
+
+					<!-- ~ Gallery -->
+					<div class="brand-category-title">Video Fotoğraf Galeri</div>
+					<div class="gallery-container">
+						<div class="gallery-item">
+							<ul id="gallery-slider" class="gallery">
+								<li data-thumb="img/brand/thumb.jpg">
+									<img src="img/brand/large.jpg" />
+								</li>
+								<li data-thumb="img/brand/thumb.jpg">
+									<img src="img/brand/large.jpg" />
+								</li>
+								<li data-thumb="img/brand/thumb.jpg">
+									<img src="img/brand/large.jpg" />
+								</li>
+								<li data-thumb="img/brand/thumb.jpg">
+									<img src="img/brand/large.jpg" />
+								</li>
+								<li data-thumb="img/brand/thumb.jpg">
+									<img src="img/brand/large.jpg" />
+								</li>
+								<li data-thumb="img/brand/thumb.jpg">
+									<img src="img/brand/large.jpg" />
+								</li>
+								<li data-thumb="img/brand/thumb.jpg">
+									<img src="img/brand/large.jpg" />
+								</li>
+								<li data-thumb="img/brand/thumb.jpg">
+									<img src="img/brand/large.jpg" />
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- / Gallery -->
+
+					<!-- ~ Contact -->
+					<div class="brand-category-title">İletişim ve Konum</div>
+					<div class="contact-container">
+						<div class="contact-item">
+							<div class="contact-map">
+								<img class="img-responsive" src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/69cb0c01-79b5-4056-a97e-ffe63e5758b2.jpg"
+								 alt="İletişim">
+							</div>
+							<div class="contact-info">
+								<div class="contact-title">
+									ADRES
+								</div>
+								<div class="contact-detail">
+									Dudullu Org.San.Böl. Esenkent Mah.Baturalp Sok. No:14 34776 Ümraniye / İSTANBUL TÜRKİYE
+								</div>
+								<div class="row number-container">
+									<div class="col-md-6">
+										<div class="contact-title">
+											TELEFON
+										</div>
+										<div class="contact-detail">
+											0 216 540 90 00
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="contact-title">
+											FAX
+										</div>
+										<div class="contact-detail">
+											0 216 540 90 10
+										</div>
+									</div>
+								</div>
+								<div class="contact-title">
+									E-POSTA
+								</div>
+								<div class="contact-detail">
+									gokselozturk@yandex.com
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Contact -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ~ Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer-menus">
+					<ul class="footer-left">
+						<li>
+							<a alt="lorem" href="#">LOREM</a>
+						</li>
+						<li>
+							<a alt="ipsum" href="#">IPSUM</a>
+						</li>
+						<li>
+							<a alt="elit" href="#">ELIT</a>
+						</li>
+						<li>
+							<a alt="compos" href="#">COMPOS</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 text-center footer-logo">
+					<div class="footer-middle">
+						<a href="/">
+							<img alt="footer-logo" src="img/footer-logo.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 footer-follow">
+					<div class="footer-right">
+						<div class="footer-social cell">EXOPOWIND’i Takip Edin</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<!-- <img alt="facebook" src="img/social/facebook.png" /> -->
+								<i class="fa fa-facebook-official"></i>
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<!-- <img alt="instagram" src="img/social/instagram.png" /> -->
+								<i class="fa fa-instagram"></i>
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<!-- <img alt="twitter" src="img/social/twitter.png" /> -->
+								<i class="fa fa-twitter"></i>
+								
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<!-- <img alt="linkedin" src="img/social/linkedin.png" /> -->
+								<i class="fa fa-linkedin"></i>
+								
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<!-- <img alt="pinterest" src="img/social/pinterest.png" /> -->
+								<i class="fa fa-pinterest"></i>
+								
+							</a>
+						</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<!-- /Footer -->
+	<!-- Scripts -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/lightslider.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

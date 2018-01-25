@@ -1,0 +1,466 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Static website boilerplate using webpack and bootstrap">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Penta</title>
+
+		<!-- Disable tap highlight on IE -->
+		<meta name="msapplication-tap-highlight" content="no">
+
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&amp;subset=latin-ext" rel="stylesheet">
+
+		<!-- Web Application Manifest -->
+		<link rel="manifest" href="manifest.json">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Static Website Boilerplate">
+		<link rel="icon" sizes="192x192" href="img/chrome-touch-icon-192x192.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="img/ms-touch-icon-144x144-precomposed.png">
+		<meta name="msapplication-TileColor" content="#260e21">
+
+		<!-- Color the status bar on mobile devices -->
+		<meta name="theme-color" content="#260e21">
+		<link rel="stylesheet" href="css\slick.css">
+		<link rel="stylesheet" href="css\slick-theme.css">
+		<link rel="stylesheet" href="css\lightslider.min.css">
+		<link rel="stylesheet" href="css\font-awesome.css">
+		<link rel="stylesheet" href="css\bootstrap.css">
+		<link rel="stylesheet" href="css\bootstrap-select.min.css">
+		<link rel="stylesheet" href="css\app.css">
+	</head>
+	<body>
+
+	<!-- ~ Menu -->
+	<div class="menu-wrapper">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="logo-wrapper">
+					<div class="logo">
+						<a href="">
+							<img src="img/logo.png" alt="Logo">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="action-wrapper menu-box">
+					<div class="white-box">
+						<div class="menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!-- use "open" class for caret open -->
+				<!-- <div class="action-wrapper login-box open"> -->
+				<div class="action-wrapper login-box" data-toggle="modal" data-target="#modal-sign">
+					<div class="white-box">
+						<div class="icon login"></div>
+						<span>GİRİŞ YAP</span>
+						<div class="login-caret"></div>
+					</div>
+				</div>
+				<!-- Search -->
+				<div class="action-wrapper search-box">
+					<div class="white-box">
+						<a class="search-link" href="search.html">
+							<div id="search-button" class="icon search"></div>
+							<span>DETAYLI ÜRÜN ARA</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Menu -->
+
+	<!-- ~ Banner -->
+	<div class="home-banner">
+		<div class="banner" id="home-banner" onclick="this.homeBannerClick">
+			<img src="img/zeppelin.png" class="img-responsive zeppelin" />
+			<img src="img/birds.png" class="img-responsive birds" style="transform: translate(0,0);" />
+			<img src="img/plane.png" class="img-responsive plane" />
+		</div>
+
+		<a href="#info" class="info"><img src="img/banner/info.png" class="img-responsive" /></a>
+		<a href="#hautau" class="hautau"><img src="img/banner/left/hautau.png" class="img-responsive" /></a>
+		<a href="#pimapen" class="pimapen"><img src="img/banner/left/pimapen.png" class="img-responsive" /></a>
+		<a href="#firatpen" class="firatpen"><img src="img/banner/left/firatpen.png" class="img-responsive" /></a>
+		<a href="#egepen" class="egepen"><img src="img/banner/left/egepenflag.png" class="img-responsive" /></a>
+
+		<!-- <a href="#fuaye" class="fuaye"><img src="img/banner/fuaye.png" class="img-responsive" /></a> -->
+		<a href="#sergeferrai" class="serge-ferrari-large"><img src="img/banner/sergeferrai.png" class="img-responsive" /></a>
+		<a href="#reed" class="reed"><img src="img/banner/reed.png" class="img-responsive" /></a>
+
+		<a href="#camoda" class="camoda"><img src="img/banner/right/camoda.png" class="img-responsive" /></a>
+		<a href="#somfy" class="somfy"><img src="img/banner/right/somfy.png" class="img-responsive" /></a>
+		<a href="#serge-ferrari" class="serge-ferrari"><img src="img/banner/right/serge-ferrari.png" class="img-responsive" /></a>
+		<a href="#koto" class="koto"><img src="img/banner/right/koto.png" class="img-responsive" /></a>
+		<a href="#adopen" class="adopen"><img src="img/banner/right/adopen.png" class="img-responsive" /></a>
+
+		<div class="peoples"></div>
+	</div>
+	<!-- / Banner -->
+
+	<!-- ~ Slider -->
+	<div class="slider-wrapper" id="home-slider">
+		<div class="flex-container">
+			<div class="flex-slide door">
+				<div class="gradient"></div>
+				<div class="flex-middle">
+					<div class="flex-title flex-title-home">KAPI</div>
+					<div class="flex-about flex-about-home">
+						<p>
+							Evinizin tarzını değiştiren çeşit çeşit kapılar bu kategoride.
+							İhtiyaçlarınıza ve beklentilerinize en uygun olan kaliteli kapı çeşitlerini inceleyebilirsiniz.
+						</p>
+					</div>
+					<div class="flex-button">
+						<a href="#">ALANA GİT</a>
+					</div>
+				</div>
+			</div>
+			<div class="flex-slide window">
+				<div class="gradient"></div>
+				<div class="flex-middle">
+					<div class="flex-title flex-title-home">KAPI</div>
+					<div class="flex-about flex-about-home">
+						<p>
+							Evinizin tarzını değiştiren çeşit çeşit kapılar bu kategoride.
+							İhtiyaçlarınıza ve beklentilerinize en uygun olan kaliteli kapı çeşitlerini inceleyebilirsiniz.
+						</p>
+					</div>
+					<div class="flex-button">
+						<a href="#">ALANA GİT</a>
+					</div>
+				</div>
+			</div>
+			<div class="flex-slide glass">
+				<div class="gradient"></div>
+				<div class="flex-middle">
+					<div class="flex-title flex-title-home">KAPI</div>
+					<div class="flex-about flex-about-home">
+						<p>
+							Evinizin tarzını değiştiren çeşit çeşit kapılar bu kategoride.
+							İhtiyaçlarınıza ve beklentilerinize en uygun olan kaliteli kapı çeşitlerini inceleyebilirsiniz.
+						</p>
+					</div>
+					<div class="flex-button">
+						<a href="#">ALANA GİT</a>
+					</div>
+				</div>
+			</div>
+			<div class="flex-slide aluminum">
+				<div class="gradient"></div>
+				<div class="flex-middle">
+					<div class="flex-title flex-title-home">KAPI</div>
+					<div class="flex-about flex-about-home">
+						<p>
+							Evinizin tarzını değiştiren çeşit çeşit kapılar bu kategoride.
+							İhtiyaçlarınıza ve beklentilerinize en uygun olan kaliteli kapı çeşitlerini inceleyebilirsiniz.
+						</p>
+					</div>
+					<div class="flex-button">
+						<a href="#">ALANA GİT</a>
+					</div>
+				</div>
+			</div>
+			<div class="flex-slide blinds">
+				<div class="gradient"></div>
+				<div class="flex-middle">
+					<div class="flex-title flex-title-home">KAPI</div>
+					<div class="flex-about flex-about-home">
+						<p>
+							Evinizin tarzını değiştiren çeşit çeşit kapılar bu kategoride.
+							İhtiyaçlarınıza ve beklentilerinize en uygun olan kaliteli kapı çeşitlerini inceleyebilirsiniz.
+						</p>
+					</div>
+					<div class="flex-button">
+						<a href="#">ALANA GİT</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Slider -->
+
+	<!-- ~ Expo -->
+	<div class="expo-banner">
+		<div class="expo">
+			<div class="expo-scroll-wrapper">
+				<span class="expo-line"></span>
+				<span class="expo-text">
+					Tüm Pencere<br> Kategorisini <br>Görüntüle
+				</span>
+				<span class="expo-caret"></span>
+			</div>
+			<a href="#" class="expo-button">Teklif Iste</a>
+		</div>
+	</div>
+	<!-- / Expo -->
+
+	<!-- ~ Brands -->
+	<div class="container" id="home-brand">
+		<h3 class="main-title">Pencere kategorisi</h3>
+		<div class="brand-wrapper">
+			<div class="row">
+				<!-- ~ Repeat -->
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="brand-logo-wrapper">
+						<a href="#" target="_blank">
+							<img class="img-responsive" alt="Pimapen"
+							src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/5c50a0d4-1b53-4dd6-bed2-7f6a6977c46d.png">
+						</a>
+					</div>
+					<span class="brand-logo-title">Pimapen</span>
+				</div>
+				<!-- / Repeat -->
+				<!-- ~ Repeat -->
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="brand-logo-wrapper">
+						<a href="#" target="_blank">
+							<img class="img-responsive" alt="Egepen"
+							src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/96ee004c-340e-4922-935f-ccd2669cba30.png">
+						</a>
+					</div>
+					<span class="brand-logo-title">Egepen</span>
+				</div>
+				<!-- / Repeat -->
+				<!-- ~ Repeat -->
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="brand-logo-wrapper">
+						<a href="#" target="_blank">
+							<img class="img-responsive" alt="Pakpen"
+							src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/700fa2b9-d720-48fe-b212-a36424b85454.png">
+						</a>
+					</div>
+					<span class="brand-logo-title">Pakpen</span>
+				</div>
+				<!-- / Repeat -->
+				<!-- ~ Repeat -->
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="brand-logo-wrapper">
+						<a href="#" target="_blank">
+							<img class="img-responsive center-block" alt="Pakpen"
+							src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/700fa2b9-d720-48fe-b212-a36424b85454.png">
+						</a>
+					</div>
+					<span class="brand-logo-title">Pakpen</span>
+				</div>
+				<!-- / Repeat -->
+				<!-- ~ Repeat -->
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="brand-logo-wrapper">
+						<a href="#" target="_blank">
+							<img class="img-responsive center-block" alt="Pakpen"
+							src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/700fa2b9-d720-48fe-b212-a36424b85454.png">
+						</a>
+					</div>
+					<span class="brand-logo-title">Pakpen</span>
+				</div>
+				<!-- / Repeat -->
+				<!-- ~ Repeat -->
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="brand-logo-wrapper">
+						<a href="#" target="_blank">
+							<img class="img-responsive center-block" alt="Fıratpen"
+							src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/a2043e95-885f-49a5-aa79-e4adea1c7ead.png">
+						</a>
+					</div>
+					<span class="brand-logo-title">Fıratpen</span>
+				</div>
+				<!-- / Repeat -->
+				<!-- ~ Repeat -->
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="brand-logo-wrapper">
+						<a href="#" target="_blank">
+							<img class="img-responsive center-block" alt="Şişecam"
+							src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/914f1a1b-d093-4df2-b2bd-15175e3714b1.png">
+						</a>
+					</div>
+					<span class="brand-logo-title last">Şişecam</span>
+				</div>
+				<!-- / Repeat -->
+				<!-- ~ Repeat -->
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="brand-logo-wrapper">
+						<a href="#" target="_blank">
+							<img class="img-responsive center-block" alt="Enderpen"
+							src="https://gallery.mailchimp.com/4d79fb9663ed901a6edea6c55/images/5e7f2e1d-0f4c-4aff-ad1f-6025d72db479.png">
+						</a>
+					</div>
+					<span class="brand-logo-title last">Enderpen</span>
+				</div>
+				<!-- / Repeat -->
+			</div>
+		</div>
+	</div>
+	<!-- /Brand -->
+
+	<!-- ~ Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer-menus">
+					<ul class="footer-left">
+						<li><a alt="lorem" href="#">LOREM</a></li>
+						<li><a alt="ipsum" href="#">IPSUM</a></li>
+						<li><a alt="elit" href="#">ELIT</a></li>
+						<li><a alt="compos" href="#">COMPOS</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 text-center footer-logo">
+					<div class="footer-middle">
+						<a href="">
+							<img alt="footer-logo"
+							src="img/footer-logo.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 footer-follow">
+					<div class="footer-right">
+						<div class="footer-social cell">EXOPOWIND’i Takip Edin</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="facebook"
+								src="img/social/facebook.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="instagram"
+								src="img/social/instagram.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="twitter"
+								src="img/social/twitter.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="linkedin"
+								src="img/social/linkedin.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="pinterest"
+								src="img/social/pinterest.png" />
+							</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /Footer -->
+
+	<!-- ~ Modal Login -->
+	<div id="modal-sign" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header mini-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">GİRİŞ YAP</h4>
+					<label for="">Teklif isteyebilmek için “Giriş Yapın” üye değilseniz lütfen “Üye Olun”.</label>
+				</div>
+				<div class="modal-body">
+					<!-- ~ Login -->
+					<div class="sign-title-container">
+						<div class="sign-line"></div>
+						<span class="sign-title">Giriş Yap</span>
+					</div>
+					<div class="sign-input-container">
+						<div class="row">
+							<div class="col-md-6">
+								<input class="input-main" type="text" name="" value="" placeholder="İsim - Soyisim">
+							</div>
+							<div class="col-md-6">
+								<input class="input-main" type="text" name="" value="" placeholder="Mail">
+							</div>
+						</div>
+					</div>
+					<!-- / Login -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button-sign">Gönder</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Login -->
+
+	<!-- ~ Modal SignUp -->
+	<div id="modal-sign-up" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header mini-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">ÜYE OL</h4>
+					<label for="">Teklif isteyebilmek için “Giriş Yapın” üye değilseniz lütfen “Üye Olun”.</label>
+				</div>
+				<div class="modal-body">
+					<!-- ~ Login -->
+					<div class="sign-title-container">
+						<div class="sign-line"></div>
+						<span class="sign-title">Üye Ol</span>
+					</div>
+					<div class="sign-input-container">
+						<div class="row">
+							<div class="col-md-4">
+								<input class="input-main" type="text" name="" value="" placeholder="İsim - Soyisim">
+							</div>
+							<div class="col-md-4">
+								<input class="input-main" type="text" name="" value="" placeholder="Mail">
+							</div>
+							<div class="col-md-4">
+								<input class="input-main" type="text" name="" value="" placeholder="Telefon No">
+							</div>
+							<div class="col-md-4">
+								<input class="input-main" type="text" name="" value="" placeholder="Firma Adı">
+							</div>
+							<div class="col-md-4">
+								<input class="input-main" type="text" name="" value="" placeholder="Ülke - İl - İlçe">
+							</div>
+							<div class="col-md-4">
+								<input class="input-main" type="text" name="" value="" placeholder="Şifre">
+							</div>
+						</div>
+					</div>
+					<!-- / Login -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button-sign">Gönder</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal SignUp -->
+	<!-- Scripts -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/lightslider.min.js"></script>
+<script src="js/jquery.scrollbar.min.js"></script>
+<script src="js/app.js"></script>
+	</body>
+</html>

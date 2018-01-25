@@ -1,0 +1,346 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Static website boilerplate using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Penta Detail Page</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Static Website Boilerplate">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#260e21">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#260e21">
+	<link rel="stylesheet" href="css\slick.css">
+	<link rel="stylesheet" href="css\slick-theme.css">
+	<link rel="stylesheet" href="css\lightslider.min.css">
+	<link rel="stylesheet" href="css\font-awesome.css">
+	<link rel="stylesheet" href="css\bootstrap.css">
+	<link rel="stylesheet" href="css\bootstrap-select.min.css">
+	<link rel="stylesheet" href="css\app.css">
+</head>
+
+<body>
+
+	<!-- ~ Menu -->
+	<div class="menu-wrapper menu-info">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="logo-wrapper">
+					<div class="logo">
+						<a href="/">
+							<img src="img/logo-detail.png" alt="Logo">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="action-wrapper menu-box">
+					<div class="white-box">
+						<div class="menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<!-- use "open" class for caret open -->
+				<!-- <div class="action-wrapper login-box open"> -->
+				<div class="action-wrapper login-box login-box-detail">
+					<div class="white-box">
+						<div class="icon login"></div>
+					</div>
+				</div>
+				<!-- Search -->
+				<div class="action-wrapper search-box search-box-detail">
+					<div class="white-box">
+						<div class="icon search"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Menu -->
+
+	<!-- ~ Banner -->
+	<div class="default-banner">
+		<div class="default-gradient"></div>
+		<div class="default"></div>
+	</div>
+	<!-- / Banner -->
+
+	<div class="container">
+		<div class="product-detail-wrapper">
+
+			<!-- ~ Slider -->
+			<div class="product-slider-container">
+				<div class="col-md-8">
+					<ul id="product-slider" class="gallery">
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+						<li data-thumb="img/detail/product-mini.jpg">
+							<img src="img/detail/product-main.jpg" />
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="product-features-detail">
+						<span class="product-features-line"></span>
+						<h5>Adopen Pencere</h5>
+						<h2>ATLANTIK 760</h2>
+						<h4>Pvc Pencere ve Pvc Kapı Sistemleri</h4>
+						<div class="product-features-description">
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+							dolor in dolore reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</div>
+						<button type="button" name="button" class="button-main" data-toggle="modal" data-target="#product-offer">Teklif Al</button>
+					</div>
+				</div>
+			</div>
+			<!-- / Slider -->
+
+			<!-- ~ Tab -->
+			<div class="product-tab-container">
+				<!-- Nav tabs -->
+				<div class="tab-adjust-container">
+					<div class="tab-adjust">
+						<ul class="nav nav-tabs product-tab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="true">
+									Ürün Detay
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="seller-tab" data-toggle="tab" href="#seller" role="tab" aria-controls="seller" aria-selected="false">
+									Satıcı Firmalar
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="doc-tab" data-toggle="tab" href="#doc" role="tab" aria-controls="doc" aria-selected="false">Teknik Döküman</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="product" role="tabpanel" aria-labelledby="product-tab">
+						<p>
+							- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+							dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+							book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+							unchanged. It was popularised in the 1960s with the release of Letraset she
+						</p>
+						<p>
+							- It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+							here, content here', making it look like reada
+						</p>
+						<p>
+							- Şaşırtmalı su tahliye sistemi
+						</p>
+					</div>
+					<div class="tab-pane" id="seller" role="tabpanel" aria-labelledby="seller-tab">
+						<p>
+							- Teklif veren firmalar 1
+						</p>
+						<p>
+							- Teklif veren firmalar 2
+						</p>
+					</div>
+					<div class="tab-pane" id="doc" role="tabpanel" aria-labelledby="doc-tab">
+						<p>
+							- Teknik Döküman 1
+						</p>
+						<p>
+							- Teknik Döküman 2
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ~ Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer-menus">
+					<ul class="footer-left">
+						<li>
+							<a alt="lorem" href="#">LOREM</a>
+						</li>
+						<li>
+							<a alt="ipsum" href="#">IPSUM</a>
+						</li>
+						<li>
+							<a alt="elit" href="#">ELIT</a>
+						</li>
+						<li>
+							<a alt="compos" href="#">COMPOS</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 text-center footer-logo">
+					<div class="footer-middle">
+						<a href="/">
+							<img alt="footer-logo" src="img/footer-logo.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 footer-follow">
+					<div class="footer-right">
+						<div class="footer-social cell">EXOPOWIND�i Takip Edin</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="facebook" src="img/social/facebook.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="instagram" src="img/social/instagram.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="twitter" src="img/social/twitter.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="linkedin" src="img/social/linkedin.png" />
+							</a>
+						</div>
+						<div class="footer-social cell">
+							<a class="icons" href="#" target="_blank">
+								<img alt="pinterest" src="img/social/pinterest.png" />
+							</a>
+						</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<!-- /Footer -->
+
+	<!-- ~ Modal Offer -->
+	<div id="product-offer" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">TEKLİF İSTE</h4>
+				</div>
+				<div class="modal-body">
+					<div class="modal-product-container">
+						<div class="modal-product-image">
+							<img class="img-responsive" src="img/detail/product-mini.jpg" alt="Product">
+						</div>
+						<div class="modal-product-detail">
+							<h6>ÜRÜN</h6>
+							<h4>
+								ATLANTİK 760
+							</h4>
+							<span>
+								Pvc Pencere ve Pvc Kapı Sistemleri
+							</span>
+						</div>
+					</div>
+					<div class="modal-picker-container">
+						<select class="selectpicker subject">
+							<option>Konu Başlığı Seç</option>
+							<option>Konu 1</option>
+							<option>Konu 2</option>
+						</select>
+						<textarea name="product-message" placeholder="Teklif Açıklaması Yazınız"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button-main product-offer-button">Gönder</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Offer -->
+
+	<!-- ~ Modal Success -->
+	<div id="product-offer-success" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">TEKLİF FORMU</h4>
+				</div>
+				<div class="modal-body">
+					<div class="success-modal-container">
+						<div class="success-wrapper">
+							<div class="success-icon"></div>
+							<div class="success-message">
+								TEKLİFİNİZ BAŞARIYLA
+								<br/> GÖNDERİLDİ.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Offer -->
+	<!-- Scripts -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/lightslider.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
